@@ -12,7 +12,7 @@ require 'securerandom'
 
 configure do
   # change to https://api.devicecheck.apple.com for production app, ie. App in App Store / Testflight
-  set :device_check_api_url, 'https://api.development.devicecheck.apple.com'
+  set :device_check_api_url, 'https://api.devicecheck.apple.com'
   set :query_url, settings.device_check_api_url + '/v1/query_two_bits'
   set :update_url, settings.device_check_api_url + '/v1/update_two_bits'
 end
